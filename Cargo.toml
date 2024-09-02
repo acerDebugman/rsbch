@@ -1,0 +1,17 @@
+[package]
+name = "rsbch"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.1.0"
+tokio = { version="1.39.3", features = ["full"] }
+reqwest = { version = "0.12.7", features = ["json"] }
+flume = "0.11.0"
+rand = "0.8.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.127"
+serde_yaml = "0.9.34"
+clap = { version="4.5.16", features=["derive", "cargo"] }
